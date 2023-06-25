@@ -8,9 +8,9 @@
  */
 void set_stack(stack_t **head, unsigned int line_number)
 {
-    (void)head;
-    (void)line_number;
-    sub.lifi = 0;
+	(void)head;
+	(void)line_number;
+	sub.lifi = 0;
 }
 /**
  * set_queue - sets the stack mode to queue (FIFO)
@@ -20,7 +20,7 @@ void set_stack(stack_t **head, unsigned int line_number)
 
 void set_queue(stack_t **head, unsigned int line_number)
 {
-    (void)head;
-    (void)line_number;
-    sub.lifi = 1;
+	(void)head;
+	(void)line_number;
+	sub.lifi = 1;
 }

@@ -2,6 +2,7 @@
 #define MONTY_H
 
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -84,7 +85,6 @@ int is_integer(char *str);
 ssize_t custom_getline(char **lineptr, size_t *n, FILE *stream);
 
 /*pint.c*/
-void pint(stack_t **stack, unsigned int line_number);
 void new_pint(stack_t **head, unsigned int line_number);
 
 /*free memory allocated for stack stackfree.c*/
@@ -135,5 +135,9 @@ void set_stack(stack_t **head, unsigned int line_number);
 void set_queue(stack_t **head, unsigned int line_number);
 
 /*execute.c*/
-int execute_op(char *content, stack_t **stack, unsigned int counter, FILE *file)
-#endif
+int execute_op(char *con, stack_t **stack, unsigned int coun, FILE *file);
+
+/*custom getline. getline.c*/
+ssize_t custom_getline(char **lineptr, size_t *n, FILE *stream);
+
+#endif /*MONTY_H*/
