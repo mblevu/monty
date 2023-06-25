@@ -7,7 +7,6 @@
  * Return: no return
  */
 
-
 void add_top(stack_t **head, unsigned int line_number)
 {
 	stack_t *temp;
